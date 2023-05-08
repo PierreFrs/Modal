@@ -5,12 +5,12 @@ import profilePic from './assets/profilepic.jpg'
 function App() {
   return (
     <>
-      <section className="intro-section">
-        <div className="intro">
+      <section className="intro-section --100vh --flex-center">
+        <div className="intro --center-all">
           <img src={profilePic} alt="Profile Picture" />
-          <h1>Let's <span>Create a modal !!!</span></h1>
-          <p>Click the button below</p>
-          <button>OPEN MODAL</button>
+          <h1 className="--text-light --text-md">Let's <span className="--fw-thin">Create a modal !!!</span></h1>
+          <p className="--text-light --mb2">Click the button below</p>
+          <button className="--btn --btn-secondary">OPEN MODAL</button>
         </div>
         <Modal />
       </section>
